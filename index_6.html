@@ -5,11 +5,65 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Integro Solutions — SaaS Sales & Marketing Consultancy</title>
   <meta name="description" content="Integro Solutions is a SaaS-focused sales and marketing consultancy. Revenue-Ready Talent, Demand Generation, Outbound Sales, Customer Success, and Growth Playbooks." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
-
   <style>
+    /* ── CUSTOM FONTS ──────────────────────────────────────────── */
+    @font-face {
+      font-family: 'AllRoundGothic-Bold';
+      src: url('AllRoundGothic-Bold.ttf') format('truetype');
+      font-weight: 700;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'AllRoundGothic-BoldOblique';
+      src: url('AllRoundGothic-BoldOblique.ttf') format('truetype');
+      font-weight: 700;
+      font-style: oblique;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'AllRoundGothic-Demi';
+      src: url('AllRoundGothic-Demi.ttf') format('truetype');
+      font-weight: 600;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'AllRoundGothic-DemiOblique';
+      src: url('AllRoundGothic-DemiOblique.ttf') format('truetype');
+      font-weight: 600;
+      font-style: oblique;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'AllRoundGothic-Medium';
+      src: url('AllRoundGothic-Medium.ttf') format('truetype');
+      font-weight: 500;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'AllRoundGothic-MediumOblique';
+      src: url('AllRoundGothic-MediumOblique.ttf') format('truetype');
+      font-weight: 500;
+      font-style: oblique;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'AllRoundGothic-Book';
+      src: url('AllRoundGothic-Book.ttf') format('truetype');
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'AllRoundGothic-BookOblique';
+      src: url('AllRoundGothic-BookOblique.ttf') format('truetype');
+      font-weight: 400;
+      font-style: oblique;
+      font-display: swap;
+    }
+
     /* ── DESIGN TOKENS ─────────────────────────────────────────── */
     :root {
       --cream:   #f5f2ec;
@@ -19,9 +73,9 @@
       --warm:    #e8e3da;
       --mid:     #8a8278;
       --white:   #ffffff;
-      --font-display: 'Bebas Neue', sans-serif;
-      --font-body:    'DM Sans', sans-serif;
-      --font-mono:    'DM Mono', monospace;
+      --font-display: 'AllRoundGothic-Bold', sans-serif;
+      --font-body:    'AllRoundGothic-Book', sans-serif;
+      --font-mono:    'AllRoundGothic-Demi', sans-serif;
     }
 
     /* ── RESET ─────────────────────────────────────────────────── */
@@ -54,7 +108,7 @@
     nav.scrolled { box-shadow: 0 2px 24px rgba(26,23,20,0.08); }
 
     .nav-logo svg {
-      height: 52px;
+      height: 64px;
       width: auto;
     }
 
@@ -535,7 +589,7 @@
       gap: 48px;
       align-items: end;
     }
-    .footer-logo svg { height: 28px; width: auto; }
+    .footer-logo svg { height: 36px; width: auto; }
     .footer-tagline {
       font-size: 13px;
       color: var(--mid);
@@ -663,7 +717,7 @@
   <!-- ── NAV ── -->
   <nav id="nav">
     <a class="nav-logo" href="/">
-      <svg width="1000" height="1000" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg" style="height:52px;width:auto;">
+      <svg width="1000" height="1000" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg" style="height:64px;width:auto;">
         <text id="integro" xml:space="preserve"><tspan x="154" y="533" font-family="AllRoundGothic-Demi, 'Nunito', sans-serif" font-size="190" fill="#fe4028" xml:space="preserve">i</tspan><tspan font-family="AllRoundGothic-Demi, 'Nunito', sans-serif" font-size="190" fill="#1a1714" xml:space="preserve">ntegro</tspan></text>
       </svg>
     </a>
@@ -808,7 +862,7 @@
   <footer>
     <div>
       <div class="footer-logo">
-        <svg width="1000" height="1000" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg" style="height:28px;width:auto;">
+        <svg width="1000" height="1000" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg" style="height:36px;width:auto;">
           <text xml:space="preserve"><tspan x="154" y="533" font-family="AllRoundGothic-Demi, 'Nunito', sans-serif" font-size="190" fill="#fe4028" xml:space="preserve">i</tspan><tspan font-family="AllRoundGothic-Demi, 'Nunito', sans-serif" font-size="190" fill="#1a1714" xml:space="preserve">ntegro</tspan></text>
         </svg>
       </div>

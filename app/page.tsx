@@ -143,7 +143,7 @@ export default function Home() {
               Human-first is non-negotiable. AI handles the work that doesn&apos;t need a human. Your strategists approve every output, manage every relationship, and steer every campaign.
             </p>
             <a
-              href="mailto:hello@integrostrategies.com?subject=Integro AI Demo"
+              href="mailto:hello@getintegro.com?subject=Integro AI Demo"
               className="inline-block bg-orange border-2 border-orange text-white px-8 py-4 rounded text-sm font-mono tracking-wide hover:bg-[#c04415] hover:border-[#c04415] transition-all duration-200 hover:-translate-y-0.5"
             >
               Request Early Access
@@ -183,7 +183,7 @@ export default function Home() {
             Integro AI is currently in private development. Be the first to know when we launch — and get early access pricing.
           </p>
           <a
-            href="mailto:hello@integrostrategies.com?subject=Integro AI Early Access"
+            href="mailto:hello@getintegro.com?subject=Integro AI Early Access"
             className="inline-block mt-8 bg-ink text-cream px-8 py-4 rounded text-sm font-mono tracking-wide border-2 border-ink hover:bg-orange hover:border-orange transition-all duration-200 hover:-translate-y-0.5"
           >
             Join the Waitlist

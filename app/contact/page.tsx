@@ -201,7 +201,7 @@ export default function ContactPage() {
             <div className="border border-warm rounded-lg p-8 bg-white">
               <div className="w-2 h-2 bg-orange rounded-full mb-5" />
               <h2 className="font-display text-2xl mb-2">
-                hello@integrostrategies.com
+                hello@getintegro.com
               </h2>
               <p className="text-sm text-mid font-light leading-relaxed mb-8">
                 We respond to every inquiry within one business day — often the

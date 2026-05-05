@@ -35,7 +35,7 @@ export default function AboutPage() {
           className="absolute -top-48 -right-48 w-[600px] h-[600px] rounded-full pointer-events-none"
           style={{
             background:
-              'radial-gradient(circle, rgba(212,80,26,0.07) 0%, transparent 70%)',
+              'radial-gradient(circle, rgba(253,112,22,0.07) 0%, transparent 70%)',
           }}
         />
         <p className="font-mono text-[11px] tracking-[0.18em] uppercase text-orange mb-4">
@@ -182,7 +182,7 @@ export default function AboutPage() {
           </p>
           <Link
             href="/contact"
-            className="inline-block bg-ink text-cream px-7 py-3.5 rounded text-sm font-mono tracking-wide border-2 border-ink hover:bg-orange hover:border-orange transition-all duration-200 hover:-translate-y-0.5"
+            className="inline-block bg-ink text-cream px-7 py-3.5 rounded text-sm font-mono tracking-wide border-2 border-ink hover:bg-orange hover:border-orange hover:text-nearblack transition-all duration-200 hover:-translate-y-0.5"
           >
             Meet the Team →
           </Link>
@@ -190,7 +190,7 @@ export default function AboutPage() {
       </section>
 
       {/* ── CTA STRIP ── */}
-      <section className="px-12 max-md:px-6 py-24 bg-orange text-white flex flex-col sm:flex-row items-center justify-between gap-12">
+      <section className="px-12 max-md:px-6 py-24 bg-orange text-nearblack flex flex-col sm:flex-row items-center justify-between gap-12">
         <h2
           className="font-display leading-none tracking-tight max-w-xl"
           style={{ fontSize: 'clamp(36px, 5vw, 72px)' }}

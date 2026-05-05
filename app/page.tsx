@@ -54,7 +54,7 @@ export default function Home() {
     <>
       {/* ── HERO ── */}
       <section className="min-h-screen flex flex-col justify-center pt-36 pb-20 px-12 max-md:px-6 relative overflow-hidden">
-        <div className="absolute top-[-200px] right-[-200px] w-[600px] h-[600px] rounded-full pointer-events-none bg-[radial-gradient(circle,rgba(212,80,26,0.07)_0%,transparent_70%)]" />
+        <div className="absolute top-[-200px] right-[-200px] w-[600px] h-[600px] rounded-full pointer-events-none bg-[radial-gradient(circle,rgba(253,112,22,0.07)_0%,transparent_70%)]" />
         <p className="font-mono text-xs tracking-[0.15em] uppercase text-orange mb-6">
           SaaS Sales &amp; Marketing Consultancy
         </p>
@@ -67,7 +67,7 @@ export default function Home() {
         <div className="flex flex-wrap gap-4 mt-12">
           <Link
             href="/services"
-            className="bg-ink text-cream px-8 py-4 rounded text-sm font-mono tracking-wide border-2 border-ink hover:bg-orange hover:border-orange transition-all duration-200 hover:-translate-y-0.5"
+            className="bg-ink text-cream px-8 py-4 rounded text-sm font-mono tracking-wide border-2 border-ink hover:bg-orange hover:border-orange hover:text-nearblack transition-all duration-200 hover:-translate-y-0.5"
           >
             Explore Services
           </Link>
@@ -144,7 +144,7 @@ export default function Home() {
             </p>
             <a
               href="mailto:hello@getintegro.com?subject=Integro AI Demo"
-              className="inline-block bg-orange border-2 border-orange text-white px-8 py-4 rounded text-sm font-mono tracking-wide hover:bg-[#c04415] hover:border-[#c04415] transition-all duration-200 hover:-translate-y-0.5"
+              className="inline-block bg-orange border-2 border-orange text-nearblack px-8 py-4 rounded text-sm font-mono tracking-wide hover:bg-[#d45e12] hover:border-[#d45e12] transition-all duration-200 hover:-translate-y-0.5"
             >
               Request Early Access
             </a>
@@ -172,7 +172,7 @@ export default function Home() {
           Integro AI &mdash; Pricing
         </p>
         <div className="max-w-2xl mx-auto text-center py-20 px-12 border border-warm rounded-xl bg-white relative overflow-hidden">
-          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_50%_0%,rgba(212,80,26,0.06)_0%,transparent_70%)] pointer-events-none" />
+          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_50%_0%,rgba(253,112,22,0.06)_0%,transparent_70%)] pointer-events-none" />
           <div className="relative w-3 h-3 bg-orange rounded-full mx-auto mb-7">
             <span className="absolute inset-[-6px] rounded-full border-2 border-orange opacity-40 animate-pulse-ring" />
           </div>
@@ -184,7 +184,7 @@ export default function Home() {
           </p>
           <a
             href="mailto:hello@getintegro.com?subject=Integro AI Early Access"
-            className="inline-block mt-8 bg-ink text-cream px-8 py-4 rounded text-sm font-mono tracking-wide border-2 border-ink hover:bg-orange hover:border-orange transition-all duration-200 hover:-translate-y-0.5"
+            className="inline-block mt-8 bg-ink text-cream px-8 py-4 rounded text-sm font-mono tracking-wide border-2 border-ink hover:bg-orange hover:border-orange hover:text-nearblack transition-all duration-200 hover:-translate-y-0.5"
           >
             Join the Waitlist
           </a>
@@ -217,7 +217,7 @@ export default function Home() {
       </section>
 
       {/* ── CTA STRIP ── */}
-      <section className="bg-orange text-white px-12 py-24 max-md:px-6 flex flex-col sm:flex-row items-center justify-between gap-12">
+      <section className="bg-orange text-nearblack px-12 py-24 max-md:px-6 flex flex-col sm:flex-row items-center justify-between gap-12">
         <h2 className="font-display text-[clamp(36px,5vw,72px)] leading-none tracking-[0.01em] max-w-xl">
           Ready to build your revenue machine?
         </h2>

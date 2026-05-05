@@ -27,7 +27,7 @@ function IntegroLogo({ height }: { height: number }) {
           y="533"
           fontFamily="AllRoundGothic-Demi, sans-serif"
           fontSize="190"
-          fill="#fe4028"
+          fill="#FD7016"
           xmlSpace="preserve"
         >
           i
@@ -35,7 +35,7 @@ function IntegroLogo({ height }: { height: number }) {
         <tspan
           fontFamily="AllRoundGothic-Demi, sans-serif"
           fontSize="190"
-          fill="#1a1714"
+          fill="#292562"
           xmlSpace="preserve"
         >
           ntegro
@@ -97,7 +97,7 @@ export default function Nav() {
           <li>
             <Link
               href="/contact"
-              className="bg-ink text-cream px-5 py-2.5 rounded text-sm font-mono tracking-wide transition-all duration-200 hover:bg-orange hover:text-white"
+              className="bg-ink text-cream px-5 py-2.5 rounded text-sm font-mono tracking-wide transition-all duration-200 hover:bg-orange hover:text-nearblack"
             >
               Get Started
             </Link>
@@ -150,7 +150,7 @@ export default function Nav() {
             <li>
               <Link
                 href="/contact"
-                className="block text-center bg-ink text-cream px-5 py-3 rounded text-sm font-mono tracking-wide mt-2 hover:bg-orange transition-colors duration-200"
+                className="block text-center bg-ink text-cream px-5 py-3 rounded text-sm font-mono tracking-wide mt-2 hover:bg-orange hover:text-nearblack transition-colors duration-200"
               >
                 Get Started
               </Link>

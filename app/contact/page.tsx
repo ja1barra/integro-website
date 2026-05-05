@@ -63,7 +63,7 @@ export default function ContactPage() {
           className="absolute -top-48 -right-48 w-[600px] h-[600px] rounded-full pointer-events-none"
           style={{
             background:
-              'radial-gradient(circle, rgba(212,80,26,0.07) 0%, transparent 70%)',
+              'radial-gradient(circle, rgba(253,112,22,0.07) 0%, transparent 70%)',
           }}
         />
         <p className="font-mono text-[11px] tracking-[0.18em] uppercase text-orange mb-4">
@@ -188,7 +188,7 @@ export default function ContactPage() {
                 <button
                   type="submit"
                   disabled={status === 'loading'}
-                  className="bg-ink text-cream px-8 py-4 rounded text-sm font-mono tracking-wide border-2 border-ink hover:bg-orange hover:border-orange transition-all duration-200 hover:-translate-y-0.5 disabled:opacity-60 disabled:cursor-not-allowed disabled:translate-y-0"
+                  className="bg-ink text-cream px-8 py-4 rounded text-sm font-mono tracking-wide border-2 border-ink hover:bg-orange hover:border-orange hover:text-nearblack transition-all duration-200 hover:-translate-y-0.5 disabled:opacity-60 disabled:cursor-not-allowed disabled:translate-y-0"
                 >
                   {status === 'loading' ? 'Sending…' : 'Send Message →'}
                 </button>

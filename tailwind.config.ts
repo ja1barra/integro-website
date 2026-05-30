@@ -14,7 +14,7 @@ const config: Config = {
       },
       colors: {
         cream: '#F4F4F4',
-        ink: '#292562',
+        ink: '#0a1f44',
         orange: '#FD7016',
         warm: '#E0E0E0',
         mid: '#8a8278',

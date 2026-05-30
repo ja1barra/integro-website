@@ -35,7 +35,7 @@ function IntegroLogo({ height }: { height: number }) {
         <tspan
           fontFamily="AllRoundGothic-Demi, sans-serif"
           fontSize="190"
-          fill="#292562"
+          fill="#0a1f44"
           xmlSpace="preserve"
         >
           ntegro

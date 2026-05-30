@@ -53,18 +53,18 @@ export default function Home() {
   return (
     <>
       {/* ── HERO ── */}
-      <section className="min-h-screen flex flex-col justify-center pt-36 pb-20 px-12 max-md:px-6 relative overflow-hidden">
+      <section className="min-h-screen flex flex-col items-center justify-center text-center pt-36 pb-20 px-12 max-md:px-6 relative overflow-hidden">
         <div className="absolute top-[-200px] right-[-200px] w-[600px] h-[600px] rounded-full pointer-events-none bg-[radial-gradient(circle,rgba(253,112,22,0.07)_0%,transparent_70%)]" />
         <p className="font-mono text-xs tracking-[0.15em] uppercase text-orange mb-6">
           SaaS Sales &amp; Marketing Consultancy
         </p>
-        <h1 className="font-display text-[clamp(64px,9vw,140px)] leading-[0.95] tracking-[0.01em] max-w-4xl">
+        <h1 className="font-display text-[clamp(64px,9vw,140px)] leading-[0.95] tracking-[0.01em]">
           Revenue<br />Engineered<br /><span className="text-orange">For SaaS</span>
         </h1>
         <p className="mt-8 text-[clamp(16px,1.8vw,20px)] font-light text-mid max-w-xl leading-relaxed">
           We embed senior go-to-market talent and AI-powered systems into your SaaS company — so you can build pipeline, convert faster, and scale without guesswork.
         </p>
-        <div className="flex flex-wrap gap-4 mt-12">
+        <div className="flex flex-wrap justify-center gap-4 mt-12">
           <Link
             href="/services"
             className="bg-ink text-cream px-8 py-4 rounded text-sm font-mono tracking-wide border-2 border-ink hover:bg-orange hover:border-orange hover:text-nearblack transition-all duration-200 hover:-translate-y-0.5"
@@ -78,7 +78,7 @@ export default function Home() {
             Meet Integro AI →
           </Link>
         </div>
-        <div className="flex flex-wrap gap-12 mt-20 pt-12 border-t border-warm">
+        <div className="flex flex-wrap justify-center gap-12 mt-20 pt-12 border-t border-warm w-full max-w-xl">
           {[
             { num: '3×', label: 'Avg. Pipeline Lift' },
             { num: '90d', label: 'To First Revenue Impact' },

@@ -5,26 +5,31 @@ const services = [
     num: '01',
     title: 'Revenue-Ready\nTalent',
     desc: 'We source, vet, and embed senior sales and marketing professionals who hit the ground running — no ramp-up tax, no mediocre hires.',
+    slug: 'revenue-ready-talent',
   },
   {
     num: '02',
     title: 'SaaS Growth\nPlaybooks',
     desc: 'Custom GTM playbooks built around your ICP, competitive landscape, and stage. From Series A hustle to enterprise motion — we write the manual.',
+    slug: 'saas-growth-playbooks',
   },
   {
     num: '03',
     title: 'Demand\nGeneration',
     desc: 'Multi-channel demand programs that fill your pipeline with qualified buyers — not vanity leads. Content, paid, ABM, and lifecycle in one motion.',
+    slug: 'demand-generation',
   },
   {
     num: '04',
     title: 'Customer\nSuccess Engine',
     desc: 'Reduce churn, expand accounts, and turn customers into advocates. We build the playbooks, tooling, and processes that make retention a revenue driver.',
+    slug: 'customer-success-engine',
   },
   {
     num: '05',
     title: 'Outbound\nSales Machine',
     desc: 'Targeted, signal-driven outbound at scale. Apollo, HubSpot, and AI-enriched sequences that book meetings with the accounts that actually matter.',
+    slug: 'outbound-sales-machine',
   },
 ]
 
@@ -104,17 +109,19 @@ export default function Home() {
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 border border-warm">
           {services.map((s) => (
-            <div
+            <Link
               key={s.num}
-              className="p-10 bg-cream border border-warm group hover:bg-white transition-colors duration-200 relative overflow-hidden"
+              href={`/services/${s.slug}`}
+              className="p-10 bg-[#f8f8f8] border border-warm group hover:bg-white transition-colors duration-200 relative overflow-hidden block"
             >
               <div className="absolute bottom-0 left-0 w-full h-[3px] bg-orange scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
               <div className="font-mono text-[11px] text-orange tracking-[0.1em] mb-5">{s.num}</div>
               <h3 className="font-display text-3xl tracking-[0.02em] mb-3 leading-tight whitespace-pre-line">
                 {s.title}
               </h3>
-              <p className="text-sm leading-7 text-mid font-light">{s.desc}</p>
-            </div>
+              <p className="text-sm leading-7 text-mid font-light mb-6">{s.desc}</p>
+              <span className="inline-block text-mid group-hover:text-orange group-hover:translate-x-1 transition-all duration-200 text-base">→</span>
+            </Link>
           ))}
         </div>
       </section>

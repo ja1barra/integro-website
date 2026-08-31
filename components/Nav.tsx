@@ -75,8 +75,8 @@ export default function Nav() {
         <nav
           className={`mx-auto flex items-center justify-between px-12 max-md:px-6 transition-all duration-500 ease-out ${
             scrolled
-              ? 'max-w-6xl rounded-2xl border border-white/40 bg-cream/70 shadow-[0_8px_32px_rgba(26,23,20,0.12)] backdrop-blur-xl backdrop-saturate-150'
-              : 'max-w-full rounded-none border-b border-warm bg-cream/80 shadow-none backdrop-blur-md backdrop-saturate-150'
+              ? 'max-w-6xl rounded-2xl border border-white/50 bg-cream/40 shadow-[0_8px_32px_rgba(26,23,20,0.12)] backdrop-blur-2xl backdrop-saturate-[200%]'
+              : 'max-w-full rounded-none border-b border-white/30 bg-cream/55 shadow-none backdrop-blur-xl backdrop-saturate-[200%]'
           }`}
           style={{ height: '72px' }}
         >

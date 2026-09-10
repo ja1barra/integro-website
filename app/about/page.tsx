@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -70,6 +71,15 @@ export default function AboutPage() {
               <br />
               SaaS actually works
             </h2>
+            <div className="relative rounded-lg overflow-hidden border border-warm aspect-[4/3]">
+              <Image
+                src="/images/team-strategy-meeting.png"
+                alt="The Integro team collaborating around a table in front of a wall that reads Grow What's Next"
+                fill
+                className="object-cover"
+                sizes="(max-width: 1024px) 100vw, 50vw"
+              />
+            </div>
           </div>
           <div className="space-y-5">
             <p className="text-base text-mid leading-[1.8] font-light">
@@ -157,35 +167,46 @@ export default function AboutPage() {
 
       {/* ── TEAM ── */}
       <section className="px-12 max-md:px-6 py-24 border-t border-warm">
-        <div className="max-w-3xl">
-          <p className="font-mono text-[11px] tracking-[0.18em] uppercase text-orange mb-4">
-            The Team
-          </p>
-          <h2 className="font-display text-[clamp(36px,4vw,64px)] leading-tight tracking-tight mb-8">
-            Senior practitioners,
-            <br />
-            not generalists
-          </h2>
-          <p className="text-base text-mid leading-[1.8] font-light mb-5">
-            Everyone who works on your engagement at Integro has spent years
-            inside SaaS companies — not consulting about them from the outside.
-            We&apos;ve carried quotas, run demand programs, built CS teams, and
-            stared down churn. We know what it feels like to be accountable to
-            a revenue number.
-          </p>
-          <p className="text-base text-mid leading-[1.8] font-light mb-8">
-            That experience is what makes the difference between advice that
-            sounds right and work that actually moves the needle. Our team
-            brings VP-level GTM experience across sales, marketing, customer
-            success, and revenue operations — available to your business without
-            the full-time hire.
-          </p>
-          <Link
-            href="/contact"
-            className="inline-block bg-ink text-cream px-7 py-3.5 rounded text-sm font-mono tracking-wide border-2 border-ink hover:bg-orange hover:border-orange hover:text-nearblack transition-all duration-200 hover:-translate-y-0.5"
-          >
-            Meet the Team →
-          </Link>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center max-w-6xl">
+          <div>
+            <p className="font-mono text-[11px] tracking-[0.18em] uppercase text-orange mb-4">
+              The Team
+            </p>
+            <h2 className="font-display text-[clamp(36px,4vw,64px)] leading-tight tracking-tight mb-8">
+              Senior practitioners,
+              <br />
+              not generalists
+            </h2>
+            <p className="text-base text-mid leading-[1.8] font-light mb-5">
+              Everyone who works on your engagement at Integro has spent years
+              inside SaaS companies — not consulting about them from the outside.
+              We&apos;ve carried quotas, run demand programs, built CS teams, and
+              stared down churn. We know what it feels like to be accountable to
+              a revenue number.
+            </p>
+            <p className="text-base text-mid leading-[1.8] font-light mb-8">
+              That experience is what makes the difference between advice that
+              sounds right and work that actually moves the needle. Our team
+              brings VP-level GTM experience across sales, marketing, customer
+              success, and revenue operations — available to your business without
+              the full-time hire.
+            </p>
+            <Link
+              href="/contact"
+              className="inline-block bg-ink text-cream px-7 py-3.5 rounded text-sm font-mono tracking-wide border-2 border-ink hover:bg-orange hover:border-orange hover:text-nearblack transition-all duration-200 hover:-translate-y-0.5"
+            >
+              Meet the Team →
+            </Link>
+          </div>
+          <div className="relative rounded-lg overflow-hidden border border-warm aspect-[4/3]">
+            <Image
+              src="/images/founder-working-solo.png"
+              alt="An Integro strategist working heads-down on a laptop in the office"
+              fill
+              className="object-cover"
+              sizes="(max-width: 1024px) 100vw, 50vw"
+            />
+          </div>
         </div>
       </section>
 

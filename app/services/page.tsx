@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -87,22 +88,36 @@ export default function ServicesPage() {
               'radial-gradient(circle, rgba(253,112,22,0.07) 0%, transparent 70%)',
           }}
         />
-        <p className="font-mono text-[11px] tracking-[0.18em] uppercase text-orange mb-4">
-          What We Do
-        </p>
-        <h1
-          className="font-display leading-none tracking-tight max-w-3xl"
-          style={{ fontSize: 'clamp(48px, 7vw, 104px)' }}
-        >
-          Five Ways We
-          <br />
-          Drive Revenue
-        </h1>
-        <p className="mt-8 text-lg text-mid font-light leading-relaxed max-w-xl">
-          Every service we offer is built around one objective: accelerating
-          SaaS revenue. No generalist consulting. No boilerplate frameworks.
-          Just proven GTM motion, embedded into your business.
-        </p>
+        <div className="grid grid-cols-1 lg:grid-cols-[3fr_2fr] gap-16 items-center">
+          <div>
+            <p className="font-mono text-[11px] tracking-[0.18em] uppercase text-orange mb-4">
+              What We Do
+            </p>
+            <h1
+              className="font-display leading-none tracking-tight max-w-3xl"
+              style={{ fontSize: 'clamp(48px, 7vw, 104px)' }}
+            >
+              Five Ways We
+              <br />
+              Drive Revenue
+            </h1>
+            <p className="mt-8 text-lg text-mid font-light leading-relaxed max-w-xl">
+              Every service we offer is built around one objective: accelerating
+              SaaS revenue. No generalist consulting. No boilerplate frameworks.
+              Just proven GTM motion, embedded into your business.
+            </p>
+          </div>
+          <div className="relative rounded-lg overflow-hidden border border-warm aspect-[4/3]">
+            <Image
+              src="/images/presenting-dashboard.png"
+              alt="An Integro strategist presenting a revenue analytics dashboard to the team"
+              fill
+              className="object-cover"
+              sizes="(max-width: 1024px) 100vw, 40vw"
+              priority
+            />
+          </div>
+        </div>
       </section>
 
       {/* ── SERVICE SECTIONS ── */}

@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 
 const services = [
   {
@@ -101,12 +102,25 @@ export default function Home() {
 
       {/* ── SERVICES ── */}
       <section className="px-12 py-28 max-md:px-6" id="services">
-        <p className="font-mono text-[11px] tracking-[0.18em] uppercase text-orange mb-4">
-          What We Do
-        </p>
-        <h2 className="font-display text-[clamp(40px,5vw,72px)] leading-none tracking-[0.01em] mb-16">
-          Five Ways We<br />Drive Revenue
-        </h2>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-16">
+          <div>
+            <p className="font-mono text-[11px] tracking-[0.18em] uppercase text-orange mb-4">
+              What We Do
+            </p>
+            <h2 className="font-display text-[clamp(40px,5vw,72px)] leading-none tracking-[0.01em]">
+              Five Ways We<br />Drive Revenue
+            </h2>
+          </div>
+          <div className="relative rounded-lg overflow-hidden border border-warm aspect-[4/3]">
+            <Image
+              src="/images/whiteboard-gtm-funnel.png"
+              alt="An Integro strategist mapping the Strategy, Outreach, Meetings, Pipeline, Revenue funnel on a whiteboard"
+              fill
+              className="object-cover"
+              sizes="(max-width: 1024px) 100vw, 50vw"
+            />
+          </div>
+        </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 border border-warm">
           {services.map((s) => (
             <Link

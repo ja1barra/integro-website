@@ -11,7 +11,7 @@ const navLinks = [
   { label: 'Contact', href: '/contact' },
 ]
 
-function IntegroLogo({ height }: { height: number }) {
+function IntegroLogo({ height, light }: { height: number; light?: boolean }) {
   return (
     <svg
       width="1000"
@@ -35,8 +35,9 @@ function IntegroLogo({ height }: { height: number }) {
         <tspan
           fontFamily="AllRoundGothic-Demi, sans-serif"
           fontSize="190"
-          fill="#0a1f44"
+          fill={light ? '#F4F4F4' : '#0a1f44'}
           xmlSpace="preserve"
+          style={{ transition: 'fill 300ms ease-out' }}
         >
           ntegro
         </tspan>
@@ -47,6 +48,7 @@ function IntegroLogo({ height }: { height: number }) {
 
 export default function Nav() {
   const [scrolled, setScrolled] = useState(false)
+  const [onDarkHero, setOnDarkHero] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
   const pathname = usePathname()
 
@@ -55,6 +57,30 @@ export default function Nav() {
     window.addEventListener('scroll', handleScroll, { passive: true })
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
+
+  // Pages can mark a section with [data-dark-hero] (a full-bleed dark
+  // photo, like the homepage hero). While any part of that section is
+  // still behind the fixed nav, the nav needs light text/logo to stay
+  // legible; once it's scrolled fully out of view, revert to the
+  // default dark-on-cream styling used over the rest of the site.
+  useEffect(() => {
+    const heroEl = document.querySelector('[data-dark-hero]') as HTMLElement | null
+    if (!heroEl) {
+      setOnDarkHero(false)
+      return
+    }
+    const NAV_HEIGHT = 96
+    const updateHeroState = () => {
+      setOnDarkHero(heroEl.getBoundingClientRect().bottom > NAV_HEIGHT)
+    }
+    updateHeroState()
+    window.addEventListener('scroll', updateHeroState, { passive: true })
+    window.addEventListener('resize', updateHeroState)
+    return () => {
+      window.removeEventListener('scroll', updateHeroState)
+      window.removeEventListener('resize', updateHeroState)
+    }
+  }, [pathname])
 
   useEffect(() => {
     setMenuOpen(false)
@@ -74,15 +100,19 @@ export default function Nav() {
       >
         <nav
           className={`mx-auto flex items-center justify-between px-12 max-md:px-6 transition-all duration-500 ease-out ${
-            scrolled
-              ? 'max-w-6xl rounded-2xl border border-white/50 bg-cream/40 shadow-[0_8px_32px_rgba(26,23,20,0.12)] backdrop-blur-2xl backdrop-saturate-[200%]'
-              : 'max-w-full rounded-none border-b border-white/30 bg-cream/55 shadow-none backdrop-blur-xl backdrop-saturate-[200%]'
+            scrolled ? 'max-w-6xl rounded-2xl shadow-[0_8px_32px_rgba(26,23,20,0.12)]' : 'max-w-full rounded-none shadow-none'
+          } ${
+            onDarkHero
+              ? 'border-b border-white/10 bg-nearblack/30 backdrop-blur-xl backdrop-saturate-[150%]'
+              : scrolled
+                ? 'border border-white/50 bg-cream/40 backdrop-blur-2xl backdrop-saturate-[200%]'
+                : 'border-b border-white/30 bg-cream/55 backdrop-blur-xl backdrop-saturate-[200%]'
           }`}
           style={{ height: '72px' }}
         >
           {/* Logo — intentionally overflows the 72px nav */}
           <Link href="/" className="flex items-center" aria-label="Integro home">
-            <IntegroLogo height={192} />
+            <IntegroLogo height={192} light={onDarkHero} />
           </Link>
 
           {/* Desktop links */}
@@ -94,7 +124,9 @@ export default function Nav() {
                   className={`text-sm tracking-wide transition-colors duration-200 ${
                     isActive(link.href)
                       ? 'text-orange font-mono'
-                      : 'text-mid hover:text-ink'
+                      : onDarkHero
+                        ? 'text-cream/80 hover:text-cream'
+                        : 'text-mid hover:text-ink'
                   }`}
                 >
                   {link.label}
@@ -104,7 +136,9 @@ export default function Nav() {
             <li>
               <Link
                 href="/contact"
-                className="bg-ink text-cream px-5 py-2.5 rounded text-sm font-mono tracking-wide transition-all duration-200 hover:bg-orange hover:text-nearblack"
+                className={`px-5 py-2.5 rounded text-sm font-mono tracking-wide transition-all duration-200 hover:bg-orange hover:text-nearblack ${
+                  onDarkHero ? 'bg-cream text-ink' : 'bg-ink text-cream'
+                }`}
               >
                 Get Started
               </Link>
@@ -119,19 +153,19 @@ export default function Nav() {
             aria-expanded={menuOpen}
           >
             <span
-              className={`block w-6 h-0.5 bg-ink transition-transform duration-200 ${
-                menuOpen ? 'translate-y-2 rotate-45' : ''
-              }`}
+              className={`block w-6 h-0.5 transition-transform duration-200 ${
+                onDarkHero ? 'bg-cream' : 'bg-ink'
+              } ${menuOpen ? 'translate-y-2 rotate-45' : ''}`}
             />
             <span
-              className={`block w-6 h-0.5 bg-ink transition-opacity duration-200 ${
-                menuOpen ? 'opacity-0' : ''
-              }`}
+              className={`block w-6 h-0.5 transition-opacity duration-200 ${
+                onDarkHero ? 'bg-cream' : 'bg-ink'
+              } ${menuOpen ? 'opacity-0' : ''}`}
             />
             <span
-              className={`block w-6 h-0.5 bg-ink transition-transform duration-200 ${
-                menuOpen ? '-translate-y-2 -rotate-45' : ''
-              }`}
+              className={`block w-6 h-0.5 transition-transform duration-200 ${
+                onDarkHero ? 'bg-cream' : 'bg-ink'
+              } ${menuOpen ? '-translate-y-2 -rotate-45' : ''}`}
             />
           </button>
         </nav>

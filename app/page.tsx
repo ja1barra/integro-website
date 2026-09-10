@@ -59,7 +59,10 @@ export default function Home() {
   return (
     <>
       {/* ── HERO ── */}
-      <section className="min-h-screen flex flex-col items-center justify-center text-center pt-36 pb-20 px-12 max-md:px-6 relative overflow-hidden">
+      <section
+        data-dark-hero
+        className="min-h-screen flex flex-col items-center justify-center text-center pt-36 pb-20 px-12 max-md:px-6 relative overflow-hidden"
+      >
         <Image
           src="/images/hero-whiteboard.png"
           alt="An Integro strategist mapping a Go-to-Market plan on a whiteboard in front of a city skyline"

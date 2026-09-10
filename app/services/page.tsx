@@ -3,7 +3,7 @@ import Image from 'next/image'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Services — Integro Solutions',
+  title: 'Services | Integro Solutions',
   description:
     'Five service lines built to drive SaaS revenue: Revenue-Ready Talent, SaaS Growth Playbooks, Demand Generation, Customer Success Engine, and Outbound Sales Machine.',
 }
@@ -14,7 +14,7 @@ const services = [
     title: 'Revenue-Ready Talent',
     subtitle: 'Senior GTM professionals, embedded from day one.',
     description:
-      'Finding great sales and marketing talent is hard. Finding people who can actually perform in a SaaS environment — without a six-month ramp — is harder. We source, vet, and embed senior go-to-market professionals who hit the ground running, contributing to pipeline and revenue from week one.',
+      'Finding great sales and marketing talent is hard. Finding people who can actually perform in a SaaS environment, without a six-month ramp, is harder. We source, vet, and embed senior go-to-market professionals who hit the ground running, contributing to pipeline and revenue from week one.',
     deliverables: [
       'Fractional CRO, VP Sales, or VP Marketing engagements',
       'Embedded SDR and AE capacity for outbound or inbound coverage',
@@ -27,7 +27,7 @@ const services = [
     title: 'SaaS Growth Playbooks',
     subtitle: 'Your GTM motion, written down and built to scale.',
     description:
-      'Most SaaS companies grow on instinct and tribal knowledge. That works — until it doesn\'t. We build custom GTM playbooks around your ICP, competitive landscape, product stage, and growth goals. From Series A hustle to enterprise motion, we write the manual so your team can execute with consistency and speed.',
+      'Most SaaS companies grow on instinct and tribal knowledge. That works until it doesn\'t. We build custom GTM playbooks around your ICP, competitive landscape, product stage, and growth goals. From Series A hustle to enterprise motion, we write the manual so your team can execute with consistency and speed.',
     deliverables: [
       'ICP definition, persona mapping, and competitive positioning',
       'Full sales playbook: discovery, objection handling, closing sequences',
@@ -40,7 +40,7 @@ const services = [
     title: 'Demand Generation',
     subtitle: 'Pipeline that converts, not vanity metrics.',
     description:
-      'We build multi-channel demand programs designed to fill your pipeline with qualified buyers who are actually ready to talk. No spray-and-pray. No vanity metrics. Every channel, every campaign, every piece of content is engineered to move your ICP from awareness to pipeline. Content, paid, ABM, and lifecycle — in one coordinated motion.',
+      'We build multi-channel demand programs designed to fill your pipeline with qualified buyers who are actually ready to talk. No spray-and-pray. No vanity metrics. Every channel, every campaign, every piece of content is engineered to move your ICP from awareness to pipeline. Content, paid, ABM, and lifecycle, in one coordinated motion.',
     deliverables: [
       'Account-Based Marketing (ABM) program design and execution',
       'Content strategy and editorial calendar aligned to pipeline stages',
@@ -53,7 +53,7 @@ const services = [
     title: 'Customer Success Engine',
     subtitle: 'Retention is a revenue strategy.',
     description:
-      'Churn is the silent killer of SaaS growth. We build the playbooks, tooling, and processes that turn customer success from a cost center into a revenue driver. Health scoring, expansion plays, renewal optimization, and advocacy programs — everything you need to reduce churn, grow net revenue retention, and build a base of customers who sell for you.',
+      'Churn is the silent killer of SaaS growth. We build the playbooks, tooling, and processes that turn customer success from a cost center into a revenue driver. Health scoring, expansion plays, renewal optimization, and advocacy programs: everything you need to reduce churn, grow net revenue retention, and build a base of customers who sell for you.',
     deliverables: [
       'Customer health scoring model and early churn signal detection',
       'Onboarding and adoption playbooks tied to time-to-value milestones',
@@ -66,7 +66,7 @@ const services = [
     title: 'Outbound Sales Machine',
     subtitle: 'Signal-driven outbound that books meetings with accounts that matter.',
     description:
-      'Cold outbound is broken — for most companies. We build targeted, signal-driven outbound systems that use intent data, technographic signals, and AI enrichment to identify accounts in-market right now. Apollo, HubSpot, and AI-powered sequencing combine to deliver personalized outreach at scale, with human approval at every key step.',
+      'Cold outbound is broken for most companies. We build targeted, signal-driven outbound systems that use intent data, technographic signals, and AI enrichment to identify accounts in-market right now. Apollo, HubSpot, and AI-powered sequencing combine to deliver personalized outreach at scale, with human approval at every key step.',
     deliverables: [
       'Outbound infrastructure setup: Apollo, HubSpot, and sequencing tools',
       'ICP-matched prospect list building with intent and enrichment data',

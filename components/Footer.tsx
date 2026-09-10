@@ -52,7 +52,7 @@ export default function Footer() {
             <IntegroLogo height={108} />
           </Link>
           <p className="mt-3 text-sm text-mid font-light leading-relaxed">
-            SaaS Sales &amp; Marketing Consultancy — getintegro.com
+            SaaS Sales &amp; Marketing Consultancy | getintegro.com
           </p>
         </div>
 
@@ -81,7 +81,7 @@ export default function Footer() {
             Stay in the loop
           </p>
           <p className="text-sm text-mid font-light leading-relaxed mb-2">
-            GTM insights, AI updates, and early access to new Integro products — no noise.
+            GTM insights, AI updates, and early access to new Integro products, no noise.
           </p>
           <NewsletterForm />
         </div>

@@ -2,15 +2,15 @@ import ServiceDetailPage from '@/components/ServiceDetailPage'
 
 export const metadata = {
   title: 'Outbound Sales Machine | Integro',
-  description: 'Targeted, signal-driven outbound at scale — built to create pipeline from your best-fit accounts, not spray and pray.',
+  description: 'Targeted, signal-driven outbound at scale, built to create pipeline from your best-fit accounts, not spray and pray.',
 }
 
 const data = {
   number: '05',
   title: 'Outbound Sales Machine',
-  tagline: 'Targeted, signal-driven outbound at scale — built to create pipeline from your best-fit accounts, not spray and pray.',
+  tagline: 'Targeted, signal-driven outbound at scale, built to create pipeline from your best-fit accounts, not spray and pray.',
   heroStat: { value: '8–12%', label: 'positive reply rate target for optimized sequences we build' },
-  overview: "Outbound works. What doesn't work is cold, generic, high-volume messaging sent to everyone with a job title that sounds vaguely relevant. We build signal-based, account-prioritized outbound systems that treat every prospect as an individual — and scale without losing that precision.",
+  overview: "Outbound works. What doesn't work is cold, generic, high-volume messaging sent to everyone with a job title that sounds vaguely relevant. We build signal-based, account-prioritized outbound systems that treat every prospect as an individual, and scale without losing that precision.",
   whatWeDeliver: [
     {
       title: 'Signal-Based Prospecting',
@@ -18,11 +18,11 @@ const data = {
     },
     {
       title: 'Multi-Touch Sequence Architecture',
-      body: 'Email, LinkedIn, and call sequences built around personas, industries, and trigger events. Not a generic 6-step email cadence — a true multi-channel motion with branching logic.',
+      body: 'Email, LinkedIn, and call sequences built around personas, industries, and trigger events. Not a generic 6-step email cadence, but a true multi-channel motion with branching logic.',
     },
     {
       title: 'Messaging Personalization at Scale',
-      body: "We create segment-level personalization frameworks that let your team write relevant first lines, reference specific context, and speak to each persona's specific pain — without manual research on every prospect.",
+      body: "We create segment-level personalization frameworks that let your team write relevant first lines, reference specific context, and speak to each persona's specific pain, without manual research on every prospect.",
     },
     {
       title: 'Infrastructure & Deliverability',

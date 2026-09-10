@@ -8,13 +8,13 @@ export const metadata = {
 const data = {
   number: '02',
   title: 'SaaS Growth Playbooks',
-  tagline: 'Custom GTM playbooks built around your ICP, competitive landscape, and growth stage — from Series A hustle to enterprise motion.',
+  tagline: 'Custom GTM playbooks built around your ICP, competitive landscape, and growth stage, from Series A hustle to enterprise motion.',
   heroStat: { value: '4–6 weeks', label: 'to a fully documented, team-ready GTM playbook' },
-  overview: "Most SaaS teams operate on institutional knowledge, tribal tactics, and borrowed frameworks. We replace that with a documented, repeatable growth system built entirely around your buyer, your market, and your stage — not a generic template.",
+  overview: "Most SaaS teams operate on institutional knowledge, tribal tactics, and borrowed frameworks. We replace that with a documented, repeatable growth system built entirely around your buyer, your market, and your stage, not a generic template.",
   whatWeDeliver: [
     {
       title: 'ICP & Buyer Map',
-      body: "Deep research into your ideal customer profile: firmographics, technographics, trigger events, decision-making unit, and the jobs-to-be-done your product solves. Every playbook starts with who you're selling to — not how.",
+      body: "Deep research into your ideal customer profile: firmographics, technographics, trigger events, decision-making unit, and the jobs-to-be-done your product solves. Every playbook starts with who you're selling to, not how.",
     },
     {
       title: 'Competitive Positioning Brief',
@@ -30,7 +30,7 @@ const data = {
     },
     {
       title: 'Living Playbook Format',
-      body: "Delivered as a structured Notion workspace with version control so your team can update, annotate, and build on it as the market shifts — not a static PDF that collects dust.",
+      body: "Delivered as a structured Notion workspace with version control so your team can update, annotate, and build on it as the market shifts, not a static PDF that collects dust.",
     },
   ],
   howItWorks: [
@@ -40,7 +40,7 @@ const data = {
     { step: '04', label: 'Final Delivery', detail: 'Polished playbook in Notion, plus a 60-minute team readout session.' },
     { step: '05', label: 'Quarterly Update Option', detail: 'Add-on retainer to refresh messaging, update competitive intel, and extend the playbook as you scale.' },
   ],
-  forWho: "Ideal for founders and revenue leaders at $2M–$15M ARR who are scaling the team but haven't documented the motion that's been working — or who are entering a new segment and need a clean GTM blueprint before firing the first shot.",
+  forWho: "Ideal for founders and revenue leaders at $2M–$15M ARR who are scaling the team but haven't documented the motion that's been working, or who are entering a new segment and need a clean GTM blueprint before firing the first shot.",
   cta: 'Build my playbook',
 }
 

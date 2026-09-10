@@ -2,23 +2,23 @@ import ServiceDetailPage from '@/components/ServiceDetailPage'
 
 export const metadata = {
   title: 'Demand Generation | Integro',
-  description: 'Multi-channel demand programs that fill your pipeline with qualified buyers — not vanity leads.',
+  description: 'Multi-channel demand programs that fill your pipeline with qualified buyers, not vanity leads.',
 }
 
 const data = {
   number: '03',
   title: 'Demand Generation',
-  tagline: 'Multi-channel demand programs that fill your pipeline with qualified buyers — not vanity leads.',
+  tagline: 'Multi-channel demand programs that fill your pipeline with qualified buyers, not vanity leads.',
   heroStat: { value: '3–5x', label: 'pipeline coverage ratio target for programs we run' },
-  overview: "Demand generation at growth-stage SaaS isn't about running ads or publishing blog posts — it's about engineering a system that consistently creates awareness with the right buyers, at the right time, across the right channels. We build and run that system for you.",
+  overview: "Demand generation at growth-stage SaaS isn't about running ads or publishing blog posts. It's about engineering a system that consistently creates awareness with the right buyers, at the right time, across the right channels. We build and run that system for you.",
   whatWeDeliver: [
     {
       title: 'Multi-Channel Program Architecture',
-      body: "We design a demand system across content, paid, ABM, and lifecycle — not siloed campaigns. Every channel has a role: awareness, consideration, conversion, or retention. We map the full motion before we produce a single asset.",
+      body: "We design a demand system across content, paid, ABM, and lifecycle, not siloed campaigns. Every channel has a role: awareness, consideration, conversion, or retention. We map the full motion before we produce a single asset.",
     },
     {
       title: 'Content Engine',
-      body: "Editorial calendar, SEO strategy, long-form content, LinkedIn thought leadership, and distribution playbook. Built around your ICP's actual questions — not topics your team thinks sound smart.",
+      body: "Editorial calendar, SEO strategy, long-form content, LinkedIn thought leadership, and distribution playbook. Built around your ICP's actual questions, not topics your team thinks sound smart.",
     },
     {
       title: 'Paid Demand Programs',

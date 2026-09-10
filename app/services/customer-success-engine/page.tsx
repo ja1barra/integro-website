@@ -9,8 +9,8 @@ const data = {
   number: '04',
   title: 'Customer Success Engine',
   tagline: 'Reduce churn, expand accounts, and turn your best customers into your most powerful sales channel.',
-  heroStat: { value: '110%+', label: 'net revenue retention — the benchmark we engineer toward' },
-  overview: "For growth-stage SaaS, customer success isn't a support function — it's a revenue function. Every percentage point of churn reduction compounds directly into your ARR. We build the systems, playbooks, and hiring profiles to make your CS org a growth engine, not a cost center.",
+  heroStat: { value: '110%+', label: 'net revenue retention: the benchmark we engineer toward' },
+  overview: "For growth-stage SaaS, customer success isn't a support function. It's a revenue function. Every percentage point of churn reduction compounds directly into your ARR. We build the systems, playbooks, and hiring profiles to make your CS org a growth engine, not a cost center.",
   whatWeDeliver: [
     {
       title: 'Churn Diagnostic',
@@ -22,7 +22,7 @@ const data = {
     },
     {
       title: 'Health Score Framework',
-      body: "A custom health score model in HubSpot built on the signals that actually predict churn in your product — not generic usage metrics. Includes automated alerts and escalation workflows.",
+      body: "A custom health score model in HubSpot built on the signals that actually predict churn in your product, not generic usage metrics. Includes automated alerts and escalation workflows.",
     },
     {
       title: 'Expansion Playbook',
@@ -38,7 +38,7 @@ const data = {
     { step: '02', label: 'System Design', detail: 'We architect the health score model, onboarding sequence, and expansion triggers in HubSpot.' },
     { step: '03', label: 'Team Enablement', detail: 'Playbook delivery, CS team training, and QBR template rollout.' },
     { step: '04', label: 'Launch & Monitor', detail: 'Programs go live with a 90-day monitoring period and biweekly optimization check-ins.' },
-    { step: '05', label: 'Retention Review', detail: 'Monthly retention reporting tied to NRR targets — not just renewal rates.' },
+    { step: '05', label: 'Retention Review', detail: 'Monthly retention reporting tied to NRR targets, not just renewal rates.' },
   ],
   forWho: "Critical for any SaaS company at $2M+ ARR with more than 20 active accounts. Especially high-ROI for teams where gross churn is above 15% annually, onboarding is informal, or CS is currently handled by the founders.",
   cta: 'Reduce my churn',

@@ -2,15 +2,15 @@ import ServiceDetailPage from '@/components/ServiceDetailPage'
 
 export const metadata = {
   title: 'Revenue-Ready Talent | Integro',
-  description: 'Senior sales and marketing professionals who hit the ground running — no ramp-up tax, no mediocre hires.',
+  description: 'Senior sales and marketing professionals who hit the ground running, no ramp-up tax, no mediocre hires.',
 }
 
 const data = {
   number: '01',
   title: 'Revenue-Ready Talent',
-  tagline: "Senior sales and marketing professionals who hit the ground running — no ramp-up tax, no mediocre hires.",
+  tagline: "Senior sales and marketing professionals who hit the ground running, no ramp-up tax, no mediocre hires.",
   heroStat: { value: '90 days', label: 'to full productivity vs. 6–9 months with a traditional hire' },
-  overview: "Most growth-stage SaaS companies lose 6–18 months every time they make a bad hire or onboard the wrong profile. We eliminate that cost entirely. Integro sources, vets, and embeds senior revenue professionals who are already fluent in your motion — product-led, sales-led, or hybrid.",
+  overview: "Most growth-stage SaaS companies lose 6–18 months every time they make a bad hire or onboard the wrong profile. We eliminate that cost entirely. Integro sources, vets, and embeds senior revenue professionals who are already fluent in your motion: product-led, sales-led, or hybrid.",
   whatWeDeliver: [
     {
       title: 'ICP-Matched Sourcing',
@@ -22,7 +22,7 @@ const data = {
     },
     {
       title: 'Ramp-Ready Onboarding Kit',
-      body: 'Every placed hire receives a 30/60/90-day playbook, a library of outbound sequences tailored to your ICP, and their first 10 target accounts pre-researched and enriched — from day one.',
+      body: 'Every placed hire receives a 30/60/90-day playbook, a library of outbound sequences tailored to your ICP, and their first 10 target accounts pre-researched and enriched, from day one.',
     },
     {
       title: 'Roles We Place',
@@ -30,7 +30,7 @@ const data = {
     },
     {
       title: 'Fractional & Full-Time Options',
-      body: "Need senior horsepower before you're ready to hire full-time? We place fractional VP-level operators who drive results at a fraction of the cost — ideal for the $1M–$5M ARR stage.",
+      body: "Need senior horsepower before you're ready to hire full-time? We place fractional VP-level operators who drive results at a fraction of the cost, ideal for the $1M–$5M ARR stage.",
     },
   ],
   howItWorks: [

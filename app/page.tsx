@@ -5,19 +5,19 @@ const services = [
   {
     num: '01',
     title: 'Revenue-Ready\nTalent',
-    desc: 'We source, vet, and embed senior sales and marketing professionals who hit the ground running — no ramp-up tax, no mediocre hires.',
+    desc: 'We source, vet, and embed senior sales and marketing professionals who hit the ground running, no ramp-up tax, no mediocre hires.',
     slug: 'revenue-ready-talent',
   },
   {
     num: '02',
     title: 'SaaS Growth\nPlaybooks',
-    desc: 'Custom GTM playbooks built around your ICP, competitive landscape, and stage. From Series A hustle to enterprise motion — we write the manual.',
+    desc: 'Custom GTM playbooks built around your ICP, competitive landscape, and stage. From Series A hustle to enterprise motion, we write the manual.',
     slug: 'saas-growth-playbooks',
   },
   {
     num: '03',
     title: 'Demand\nGeneration',
-    desc: 'Multi-channel demand programs that fill your pipeline with qualified buyers — not vanity leads. Content, paid, ABM, and lifecycle in one motion.',
+    desc: 'Multi-channel demand programs that fill your pipeline with qualified buyers, not vanity leads. Content, paid, ABM, and lifecycle in one motion.',
     slug: 'demand-generation',
   },
   {
@@ -37,7 +37,7 @@ const services = [
 const agents = [
   {
     name: 'Outbound Agent',
-    desc: 'Prospecting, enrichment, and sequencing — fully automated with human approval gates.',
+    desc: 'Prospecting, enrichment, and sequencing, fully automated with human approval gates.',
   },
   {
     name: 'Demand Gen Agent',
@@ -45,7 +45,7 @@ const agents = [
   },
   {
     name: 'CS Engine Agent',
-    desc: 'Health scoring, churn signals, expansion triggers — monitored continuously.',
+    desc: 'Health scoring, churn signals, expansion triggers, monitored continuously.',
   },
   {
     name: 'Playbook Agent',
@@ -79,7 +79,7 @@ export default function Home() {
             Revenue<br />Engineered<br /><span className="text-orange">For SaaS</span>
           </h1>
           <p className="mt-8 text-[clamp(16px,1.8vw,20px)] font-light text-cream/70 max-w-xl leading-relaxed mx-auto">
-            We embed senior go-to-market talent and AI-powered systems into your SaaS company — so you can build pipeline, convert faster, and scale without guesswork.
+            We embed senior go-to-market talent and AI-powered systems into your SaaS company, so you can build pipeline, convert faster, and scale without guesswork.
           </p>
           <div className="flex flex-wrap justify-center gap-4 mt-12">
             <Link
@@ -170,7 +170,7 @@ export default function Home() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div>
             <p className="text-[17px] leading-[1.75] font-light text-cream/70 mb-6">
-              An AI-powered sales operating system built specifically for SaaS companies. Four autonomous agents handling volume and repetition — so your team can own strategy, relationships, and decisions.
+              An AI-powered sales operating system built specifically for SaaS companies. Four autonomous agents handling volume and repetition, so your team can own strategy, relationships, and decisions.
             </p>
             <p className="text-[17px] leading-[1.75] font-light text-cream/70 mb-8">
               Human-first is non-negotiable. AI handles the work that doesn&apos;t need a human. Your strategists approve every output, manage every relationship, and steer every campaign.
@@ -213,7 +213,7 @@ export default function Home() {
             Coming Soon
           </h2>
           <p className="text-[17px] font-light text-mid leading-[1.7] max-w-sm mx-auto">
-            Integro AI is currently in private development. Be the first to know when we launch — and get early access pricing.
+            Integro AI is currently in private development. Be the first to know when we launch, and get early access pricing.
           </p>
           <a
             href="mailto:hello@getintegro.com?subject=Integro AI Early Access"
@@ -234,7 +234,7 @@ export default function Home() {
             We built Integro around a simple belief: the best GTM teams are those where humans and AI each do what they&apos;re best at. AI handles prospecting volume, content drafts, health monitoring, and data synthesis. Humans own relationships, judgment, and strategy.
           </p>
           <p className="text-base leading-[1.8] text-mid font-light mb-8">
-            Every engagement we run — consulting or AI-powered — is grounded in this principle. You get the leverage of modern AI without losing the strategic edge that only experienced humans provide.
+            Every engagement we run, consulting or AI-powered, is grounded in this principle. You get the leverage of modern AI without losing the strategic edge that only experienced humans provide.
           </p>
           <div className="flex flex-wrap gap-2">
             {tags.map((t) => (

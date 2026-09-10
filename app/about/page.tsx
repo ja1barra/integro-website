@@ -3,7 +3,7 @@ import Image from 'next/image'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'About — Integro Solutions',
+  title: 'About | Integro Solutions',
   description:
     'Integro Solutions is a human-first, AI-augmented SaaS sales and marketing consultancy. Senior practitioners embedded into your go-to-market motion.',
 }
@@ -19,7 +19,7 @@ const values = [
   },
   {
     label: 'Revenue-Focused',
-    desc: "We don't optimize for impressions, MQLs, or activity reports. We optimize for pipeline, conversion, and revenue impact — the numbers that matter.",
+    desc: "We don't optimize for impressions, MQLs, or activity reports. We optimize for pipeline, conversion, and revenue impact: the numbers that matter.",
   },
   {
     label: 'AI-Augmented',
@@ -84,7 +84,7 @@ export default function AboutPage() {
           <div className="space-y-5">
             <p className="text-base text-mid leading-[1.8] font-light">
               Integro was founded by senior go-to-market practitioners who had
-              spent years inside SaaS companies — building sales teams,
+              spent years inside SaaS companies, building sales teams,
               designing demand programs, scaling outbound, and reducing churn.
               We saw the same patterns fail, over and over: generalist agencies
               that didn&apos;t understand SaaS metrics, hiring delays that cost
@@ -95,7 +95,7 @@ export default function AboutPage() {
               So we built Integro to do it differently. Embedded senior talent.
               Custom playbooks. AI tools that actually work for sales and
               marketing teams. And a relentless focus on the metrics that move
-              the business — pipeline, conversion, NRR.
+              the business: pipeline, conversion, NRR.
             </p>
             <p className="text-base text-mid leading-[1.8] font-light">
               We work with SaaS companies from Series A through growth stage,
@@ -129,7 +129,7 @@ export default function AboutPage() {
             data synthesis. Humans own relationships, judgment, and strategy.
           </p>
           <p className="text-base text-mid leading-[1.8] font-light mb-5">
-            Every engagement we run — consulting or AI-powered — is grounded in
+            Every engagement we run, consulting or AI-powered, is grounded in
             this principle. You get the leverage of modern AI without losing the
             strategic edge that only experienced humans provide.
           </p>
@@ -179,7 +179,7 @@ export default function AboutPage() {
             </h2>
             <p className="text-base text-mid leading-[1.8] font-light mb-5">
               Everyone who works on your engagement at Integro has spent years
-              inside SaaS companies — not consulting about them from the outside.
+              inside SaaS companies, not consulting about them from the outside.
               We&apos;ve carried quotas, run demand programs, built CS teams, and
               stared down churn. We know what it feels like to be accountable to
               a revenue number.
@@ -188,7 +188,7 @@ export default function AboutPage() {
               That experience is what makes the difference between advice that
               sounds right and work that actually moves the needle. Our team
               brings VP-level GTM experience across sales, marketing, customer
-              success, and revenue operations — available to your business without
+              success, and revenue operations, available to your business without
               the full-time hire.
             </p>
             <Link

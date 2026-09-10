@@ -90,7 +90,7 @@ export default function ContactPage() {
                 <h2 className="font-display text-3xl mb-4">Message received.</h2>
                 <p className="text-mid font-light text-base leading-relaxed max-w-sm mx-auto">
                   Thanks for reaching out. We typically respond within one
-                  business day — usually faster. We&apos;ll be in touch shortly.
+                  business day, usually faster. We&apos;ll be in touch shortly.
                 </p>
               </div>
             ) : (
@@ -204,7 +204,7 @@ export default function ContactPage() {
                 hello@getintegro.com
               </h2>
               <p className="text-sm text-mid font-light leading-relaxed mb-8">
-                We respond to every inquiry within one business day — often the
+                We respond to every inquiry within one business day, often the
                 same day. No auto-responders. A real human will read your
                 message.
               </p>

@@ -60,43 +60,52 @@ export default function Home() {
     <>
       {/* ── HERO ── */}
       <section className="min-h-screen flex flex-col items-center justify-center text-center pt-36 pb-20 px-12 max-md:px-6 relative overflow-hidden">
-        <div className="absolute top-[-200px] right-[-200px] w-[600px] h-[600px] rounded-full pointer-events-none bg-[radial-gradient(circle,rgba(253,112,22,0.07)_0%,transparent_70%)]" />
-        <p className="font-mono text-xs tracking-[0.15em] uppercase text-orange mb-6">
-          SaaS Sales &amp; Marketing Consultancy
-        </p>
-        <h1 className="font-display text-[clamp(64px,9vw,140px)] leading-[0.95] tracking-[0.01em]">
-          Revenue<br />Engineered<br /><span className="text-orange">For SaaS</span>
-        </h1>
-        <p className="mt-8 text-[clamp(16px,1.8vw,20px)] font-light text-mid max-w-xl leading-relaxed">
-          We embed senior go-to-market talent and AI-powered systems into your SaaS company — so you can build pipeline, convert faster, and scale without guesswork.
-        </p>
-        <div className="flex flex-wrap justify-center gap-4 mt-12">
-          <Link
-            href="/services"
-            className="bg-ink text-cream px-8 py-4 rounded text-sm font-mono tracking-wide border-2 border-ink hover:bg-orange hover:border-orange hover:text-nearblack transition-all duration-200 hover:-translate-y-0.5"
-          >
-            Explore Services
-          </Link>
-          <Link
-            href="#integro-ai"
-            className="bg-transparent text-ink px-8 py-4 rounded text-sm font-mono tracking-wide border-2 border-warm hover:border-ink transition-all duration-200 hover:-translate-y-0.5"
-          >
-            Meet Integro AI →
-          </Link>
-        </div>
-        <div className="flex flex-wrap justify-center gap-12 mt-20 pt-12 border-t border-warm w-full max-w-xl">
-          {[
-            { num: '3×', label: 'Avg. Pipeline Lift' },
-            { num: '90d', label: 'To First Revenue Impact' },
-            { num: '5', label: 'Core Service Lines' },
-          ].map((m) => (
-            <div key={m.label}>
-              <div className="font-display text-5xl leading-none">
-                {m.num}
+        <Image
+          src="/images/hero-whiteboard.png"
+          alt="An Integro strategist mapping a Go-to-Market plan on a whiteboard in front of a city skyline"
+          fill
+          priority
+          className="object-cover object-[75%_center]"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-nearblack/80 via-nearblack/70 to-nearblack/85" />
+        <div className="relative">
+          <p className="font-mono text-xs tracking-[0.15em] uppercase text-orange mb-6">
+            SaaS Sales &amp; Marketing Consultancy
+          </p>
+          <h1 className="font-display text-[clamp(64px,9vw,140px)] leading-[0.95] tracking-[0.01em] text-cream">
+            Revenue<br />Engineered<br /><span className="text-orange">For SaaS</span>
+          </h1>
+          <p className="mt-8 text-[clamp(16px,1.8vw,20px)] font-light text-cream/70 max-w-xl leading-relaxed mx-auto">
+            We embed senior go-to-market talent and AI-powered systems into your SaaS company — so you can build pipeline, convert faster, and scale without guesswork.
+          </p>
+          <div className="flex flex-wrap justify-center gap-4 mt-12">
+            <Link
+              href="/services"
+              className="bg-orange text-nearblack px-8 py-4 rounded text-sm font-mono tracking-wide border-2 border-orange hover:bg-[#d45e12] hover:border-[#d45e12] transition-all duration-200 hover:-translate-y-0.5"
+            >
+              Explore Services
+            </Link>
+            <Link
+              href="#integro-ai"
+              className="bg-transparent text-cream px-8 py-4 rounded text-sm font-mono tracking-wide border-2 border-cream/30 hover:border-cream transition-all duration-200 hover:-translate-y-0.5"
+            >
+              Meet Integro AI →
+            </Link>
+          </div>
+          <div className="flex flex-wrap justify-center gap-12 mt-20 pt-12 border-t border-cream/20 w-full max-w-xl mx-auto">
+            {[
+              { num: '3×', label: 'Avg. Pipeline Lift' },
+              { num: '90d', label: 'To First Revenue Impact' },
+              { num: '5', label: 'Core Service Lines' },
+            ].map((m) => (
+              <div key={m.label}>
+                <div className="font-display text-5xl leading-none text-cream">
+                  {m.num}
+                </div>
+                <div className="mt-1 text-xs font-mono tracking-[0.05em] text-cream/60">{m.label}</div>
               </div>
-              <div className="mt-1 text-xs font-mono tracking-[0.05em] text-mid">{m.label}</div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </section>
 

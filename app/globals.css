@@ -127,6 +127,72 @@
   animation: fadeUp 0.7s ease forwards;
 }
 
+/* ── LIQUID GLASS (nav) ──────────────────────────────────────
+   Highest-clarity glass: nearly transparent tint, strong blur +
+   saturation, refraction-style specular rim and inner glow. */
+.liquid-glass {
+  position: relative;
+  isolation: isolate;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.28) 0%,
+    rgba(255, 255, 255, 0.08) 45%,
+    rgba(255, 255, 255, 0.16) 100%
+  );
+  -webkit-backdrop-filter: blur(14px) saturate(190%) brightness(1.08) contrast(1.02);
+  backdrop-filter: blur(14px) saturate(190%) brightness(1.08) contrast(1.02);
+  border: 1px solid rgba(255, 255, 255, 0.42);
+  box-shadow:
+    inset 0 1.5px 1px rgba(255, 255, 255, 0.85),
+    inset 0 -1.5px 1px rgba(255, 255, 255, 0.25),
+    inset 1.5px 0 1px rgba(255, 255, 255, 0.35),
+    inset -1.5px 0 1px rgba(255, 255, 255, 0.35),
+    inset 0 0 22px rgba(255, 255, 255, 0.18),
+    0 10px 40px rgba(10, 31, 68, 0.14),
+    0 2px 8px rgba(10, 31, 68, 0.06);
+}
+
+/* Diagonal specular sheen sweeping across the pane */
+.liquid-glass::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  z-index: -1;
+  background: linear-gradient(
+    115deg,
+    rgba(255, 255, 255, 0) 20%,
+    rgba(255, 255, 255, 0.35) 38%,
+    rgba(255, 255, 255, 0) 52%,
+    rgba(255, 255, 255, 0.12) 78%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+/* Over the dark hero photo: keep it clear, shift tint to a cool light */
+.liquid-glass-dark {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.16) 0%,
+    rgba(255, 255, 255, 0.04) 45%,
+    rgba(255, 255, 255, 0.1) 100%
+  );
+  border-color: rgba(255, 255, 255, 0.28);
+  box-shadow:
+    inset 0 1.5px 1px rgba(255, 255, 255, 0.55),
+    inset 0 -1.5px 1px rgba(255, 255, 255, 0.15),
+    inset 1.5px 0 1px rgba(255, 255, 255, 0.22),
+    inset -1.5px 0 1px rgba(255, 255, 255, 0.22),
+    inset 0 0 22px rgba(255, 255, 255, 0.08),
+    0 10px 40px rgba(0, 0, 0, 0.28);
+}
+
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+  .liquid-glass { background: rgba(244, 244, 244, 0.9); }
+  .liquid-glass-dark { background: rgba(17, 17, 17, 0.8); }
+}
+
 /* ── SERVICE DETAIL PAGE ─────────────────────────────────── */
 .sdp-root {
   background: #ffffff;
@@ -177,7 +243,7 @@
   font-weight: 700;
   line-height: 1.05;
   letter-spacing: 0.01em;
-  color: #292562;
+  color: #0a1f44;
   margin-bottom: 16px;
 }
 
@@ -192,7 +258,7 @@
 
 .sdp-stat-block {
   display: inline-block;
-  background: #292562;
+  background: #0a1f44;
   border-radius: 6px;
   padding: 20px 32px;
 }
@@ -217,7 +283,7 @@
   font-family: 'AllRoundGothic-Book', sans-serif;
   font-size: 17px;
   line-height: 1.75;
-  color: #333333;
+  color: #0a1f44;
   margin-bottom: 56px;
 }
 
@@ -238,19 +304,19 @@
 .sdp-deliver-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  border: 1px solid #e2e2e2;
+  border: 1px solid #E0E0E0;
 }
 
 .sdp-deliver-card {
   padding: 28px 24px;
-  border: 1px solid #e2e2e2;
+  border: 1px solid #E0E0E0;
 }
 
 .sdp-deliver-title {
   font-family: 'AllRoundGothic-Demi', sans-serif;
   font-size: 14px;
   letter-spacing: 0.02em;
-  color: #292562;
+  color: #0a1f44;
   margin-bottom: 8px;
 }
 
@@ -269,7 +335,7 @@
   display: flex;
   flex-direction: column;
   gap: 0;
-  border: 1px solid #e2e2e2;
+  border: 1px solid #E0E0E0;
 }
 
 .sdp-step {
@@ -277,7 +343,7 @@
   align-items: flex-start;
   gap: 20px;
   padding: 20px 24px;
-  border-bottom: 1px solid #e2e2e2;
+  border-bottom: 1px solid #E0E0E0;
 }
 
 .sdp-step:last-child {
@@ -303,7 +369,7 @@
 .sdp-step-label {
   font-family: 'AllRoundGothic-Demi', sans-serif;
   font-size: 14px;
-  color: #292562;
+  color: #0a1f44;
 }
 
 .sdp-step-detail {
@@ -316,7 +382,7 @@
 /* For who */
 .sdp-for-who {
   border-left: 3px solid #FD7016;
-  background: #fff9f5;
+  background: rgba(253, 112, 22, 0.06);
   padding: 20px 24px;
   border-radius: 0 4px 4px 0;
 }
@@ -325,7 +391,7 @@
   font-family: 'AllRoundGothic-Book', sans-serif;
   font-size: 16px;
   line-height: 1.7;
-  color: #333333;
+  color: #0a1f44;
 }
 
 /* CTA */
@@ -335,8 +401,8 @@
 
 .sdp-cta-btn {
   display: inline-block;
-  background: #292562;
-  color: #ffffff;
+  background: #0a1f44;
+  color: #F4F4F4;
   font-family: 'AllRoundGothic-Demi', sans-serif;
   font-size: 14px;
   letter-spacing: 0.06em;
@@ -348,6 +414,7 @@
 
 .sdp-cta-btn:hover {
   background: #FD7016;
+  color: #111111;
   transform: translateY(-2px);
 }
 

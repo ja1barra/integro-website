@@ -99,15 +99,9 @@ export default function Nav() {
         }`}
       >
         <nav
-          className={`mx-auto flex items-center justify-between px-12 max-md:px-6 transition-all duration-500 ease-out ${
-            scrolled ? 'max-w-6xl rounded-2xl shadow-[0_8px_32px_rgba(26,23,20,0.12)]' : 'max-w-full rounded-none shadow-none'
-          } ${
-            onDarkHero
-              ? 'border-b border-white/10 bg-nearblack/30 backdrop-blur-xl backdrop-saturate-[150%]'
-              : scrolled
-                ? 'border border-white/50 bg-cream/40 backdrop-blur-2xl backdrop-saturate-[200%]'
-                : 'border-b border-white/30 bg-cream/55 backdrop-blur-xl backdrop-saturate-[200%]'
-          }`}
+          className={`liquid-glass mx-auto flex items-center justify-between px-12 max-md:px-6 transition-all duration-500 ease-out ${
+            scrolled ? 'max-w-6xl rounded-2xl' : 'max-w-full rounded-none border-x-0 border-t-0'
+          } ${onDarkHero ? 'liquid-glass-dark' : ''}`}
           style={{ height: '72px' }}
         >
           {/* Logo — intentionally overflows the 72px nav */}
@@ -125,8 +119,8 @@ export default function Nav() {
                     isActive(link.href)
                       ? 'text-orange font-mono'
                       : onDarkHero
-                        ? 'text-cream/80 hover:text-cream'
-                        : 'text-mid hover:text-ink'
+                        ? 'text-cream hover:text-white'
+                        : 'text-ink/70 hover:text-ink'
                   }`}
                 >
                   {link.label}
@@ -183,10 +177,10 @@ export default function Nav() {
               <li key={link.href}>
                 <Link
                   href={link.href}
-                  className={`block text-base py-2 border-b border-warm transition-colors duration-200 ${
+                  className={`block text-base py-2 border-b border-white/40 transition-colors duration-200 ${
                     isActive(link.href)
                       ? 'text-orange font-mono'
-                      : 'text-mid hover:text-ink'
+                      : 'text-ink/70 hover:text-ink'
                   }`}
                 >
                   {link.label}

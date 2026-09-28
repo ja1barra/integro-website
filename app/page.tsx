@@ -153,7 +153,7 @@ export default function Home() {
       </section>
 
       {/* ── INTEGRO AI ── */}
-      <section className="bg-ink text-cream px-12 py-28 max-md:px-6 relative overflow-hidden" id="integro-ai">
+      <section data-dark-hero className="bg-ink text-cream px-12 py-28 max-md:px-6 relative overflow-hidden" id="integro-ai">
         <div
           className="absolute right-[-40px] top-[-60px] font-display text-[400px] leading-none pointer-events-none select-none"
           style={{ color: 'rgba(255,255,255,0.03)' }}

@@ -58,10 +58,8 @@ function GlassFilter() {
         height="100%"
         colorInterpolationFilters="sRGB"
       >
-        <feImage href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='0'><stop offset='0%' stop-color='rgb(255,128,128)'/><stop offset='14%' stop-color='rgb(128,128,128)'/><stop offset='86%' stop-color='rgb(128,128,128)'/><stop offset='100%' stop-color='rgb(0,128,128)'/></linearGradient></defs><rect width='100' height='100' fill='url(%23g)'/></svg>" x="0" y="0" width="100%" height="100%" preserveAspectRatio="none" result="mapX" />
-        <feDisplacementMap in="SourceGraphic" in2="mapX" scale="46" xChannelSelector="R" yChannelSelector="G" result="dx" />
-        <feImage href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'><defs><linearGradient id='g' x1='0' y1='0' x2='0' y2='1'><stop offset='0%' stop-color='rgb(128,128,255)'/><stop offset='30%' stop-color='rgb(128,128,128)'/><stop offset='70%' stop-color='rgb(128,128,128)'/><stop offset='100%' stop-color='rgb(128,128,0)'/></linearGradient></defs><rect width='100' height='100' fill='url(%23g)'/></svg>" x="0" y="0" width="100%" height="100%" preserveAspectRatio="none" result="mapY" />
-        <feDisplacementMap in="dx" in2="mapY" scale="30" xChannelSelector="R" yChannelSelector="B" />
+        <feTurbulence type="fractalNoise" baseFrequency="0.006 0.03" numOctaves="2" seed="4" result="noise" />
+        <feDisplacementMap in="SourceGraphic" in2="noise" scale="14" xChannelSelector="R" yChannelSelector="G" />
       </filter>
     </svg>
   )
@@ -85,14 +83,23 @@ export default function Nav() {
   // legible; once it's scrolled fully out of view, revert to the
   // default dark-on-cream styling used over the rest of the site.
   useEffect(() => {
-    const heroEl = document.querySelector('[data-dark-hero]') as HTMLElement | null
-    if (!heroEl) {
+    const darkEls = Array.from(
+      document.querySelectorAll<HTMLElement>('[data-dark-hero]')
+    )
+    if (darkEls.length === 0) {
       setOnDarkHero(false)
       return
     }
-    const NAV_HEIGHT = 96
+    // The nav counts as "over dark" while its vertical midpoint sits
+    // inside any dark section (or the dark hero is still behind it).
+    const NAV_MID = 48
     const updateHeroState = () => {
-      setOnDarkHero(heroEl.getBoundingClientRect().bottom > NAV_HEIGHT)
+      setOnDarkHero(
+        darkEls.some((el) => {
+          const r = el.getBoundingClientRect()
+          return r.top < NAV_MID && r.bottom > NAV_MID
+        })
+      )
     }
     updateHeroState()
     window.addEventListener('scroll', updateHeroState, { passive: true })

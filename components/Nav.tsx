@@ -46,6 +46,27 @@ function IntegroLogo({ height, light }: { height: number; light?: boolean }) {
   )
 }
 
+/* Edge-refraction filter used by .liquid-glass (backdrop-filter: url(#liquid-glass-refraction)) */
+function GlassFilter() {
+  return (
+    <svg width="0" height="0" style={{ position: 'absolute' }} aria-hidden focusable="false">
+      <filter
+        id="liquid-glass-refraction"
+        x="0"
+        y="0"
+        width="100%"
+        height="100%"
+        colorInterpolationFilters="sRGB"
+      >
+        <feImage href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='0'><stop offset='0%' stop-color='rgb(255,128,128)'/><stop offset='14%' stop-color='rgb(128,128,128)'/><stop offset='86%' stop-color='rgb(128,128,128)'/><stop offset='100%' stop-color='rgb(0,128,128)'/></linearGradient></defs><rect width='100' height='100' fill='url(%23g)'/></svg>" x="0" y="0" width="100%" height="100%" preserveAspectRatio="none" result="mapX" />
+        <feDisplacementMap in="SourceGraphic" in2="mapX" scale="46" xChannelSelector="R" yChannelSelector="G" result="dx" />
+        <feImage href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'><defs><linearGradient id='g' x1='0' y1='0' x2='0' y2='1'><stop offset='0%' stop-color='rgb(128,128,255)'/><stop offset='30%' stop-color='rgb(128,128,128)'/><stop offset='70%' stop-color='rgb(128,128,128)'/><stop offset='100%' stop-color='rgb(128,128,0)'/></linearGradient></defs><rect width='100' height='100' fill='url(%23g)'/></svg>" x="0" y="0" width="100%" height="100%" preserveAspectRatio="none" result="mapY" />
+        <feDisplacementMap in="dx" in2="mapY" scale="30" xChannelSelector="R" yChannelSelector="B" />
+      </filter>
+    </svg>
+  )
+}
+
 export default function Nav() {
   const [scrolled, setScrolled] = useState(false)
   const [onDarkHero, setOnDarkHero] = useState(false)
@@ -93,6 +114,7 @@ export default function Nav() {
 
   return (
     <>
+      <GlassFilter />
       <div
         className={`fixed left-0 right-0 z-50 transition-all duration-500 ease-out ${
           scrolled ? 'top-3 px-3 md:px-6' : 'top-0 px-0'
